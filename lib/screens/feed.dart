@@ -17,7 +17,7 @@ class _FeedState extends State<Feed> {
     FirebaseFirestore.instance.collection("posts").doc(_docId).update({"likes":FieldValue.increment(1)});
   }
   Future<void> nav(List<dynamic> list) async {
-    Navigator.push(context,MaterialPageRoute(builder:(context)=>Comments(comments:list,docId:_docId,username: "abc",)));
+    Navigator.push(context,MaterialPageRoute(builder:(context)=>Comments(comments:list,docId:_docId)));
   }
   @override
   Widget build(BuildContext context) {

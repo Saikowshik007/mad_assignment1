@@ -6,8 +6,7 @@ import 'package:comment_box/comment/comment.dart';
 class Comments extends StatefulWidget {
  final List comments;
  final String docId;
- final String username;
-  const Comments({Key? key, required List this.comments,required this.docId,required this.username}) : super(key: key);
+  const Comments({Key? key, required List this.comments,required this.docId}) : super(key: key);
 
   @override
   _CommentsState createState() => _CommentsState();
